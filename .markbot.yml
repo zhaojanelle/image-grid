@@ -1,0 +1,48 @@
+repo: "image-grid"
+canvasCourse: "467502"
+canvasAssignment: "4178353"
+
+naming: true
+commits: 2
+liveWebsite: true
+
+html:
+  - path: "index.html"
+    locked: true
+
+css:
+  - path: "css/main.css"
+    valid: true
+    bestPractices: true
+    has:
+      - ['html', 'box-sizing', 'border-box']
+      - ['html', 'text-size-adjust', '100%']
+      - ['html', '-moz-text-size-adjust', '100%']
+      - ['html', '-ms-text-size-adjust', '100%']
+      - ['html', '-webkit-text-size-adjust', '100%']
+      - ['*', 'box-sizing', 'inherit']
+      - ['body', 'margin', '0']
+      - ['img', 'display', 'block']
+    search:
+      - '@-moz-viewport'
+      - '@-ms-viewport'
+      - '@-o-viewport'
+      - '@-webkit-viewport'
+      - '@viewport'
+      - '@media only screen and \(min-width: 25em\) \{'
+      - '@media only screen and \(min-width: 38em\) \{'
+      - '@media only screen and \(min-width: 60em\) \{'
+      - 'float: left'
+      - 'display: none'
+      - 'img:nth-child\('
+      - 'width: 33\.3{1,4}%'
+      - 'width: 66\.6{1,4}%'
+    search_not:
+      - ['@media.+\(.*max-width', 'Media queries with `max-width` should not be used — use `min-width` instead']
+      - ['@media.+\(.*px', 'Pixel units should not be used in media queries — use `em` instead']
+      - ['font-size\s*:\s*.+px', 'Pixel units should not be used for `font-size` — use `rem` instead']
+      - ['line-height\s*:\s*.+(px|rem|em)', 'Line heights should not have units']
+
+screenshots:
+  - path: "index.html"
+    sizes: [320, 400, 650, 980, 1400]
