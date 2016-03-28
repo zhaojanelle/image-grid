@@ -35,8 +35,9 @@ css:
       - 'float: left'
       - 'display: none'
       - 'img:nth-child\('
-      - 'width: 33\.3{1,4}%'
-      - 'width: 66\.6{1,4}%'
+      - 'width: 50%'
+      - 'width: 33\.3333%'
+      - 'width: 66\.6666%'
     search_not:
       - ['@media.+\(.*max-width', 'Media queries with `max-width` should not be used — use `min-width` instead']
       - ['@media.+\(.*px', 'Pixel units should not be used in media queries — use `em` instead']
