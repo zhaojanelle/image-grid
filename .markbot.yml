@@ -1,10 +1,14 @@
 repo: "image-grid"
-canvasCourse: "467502"
-canvasAssignment: "4178353"
+canvasCourse: "web-dev-1"
 
 naming: true
-commits: 2
+restrictFileTypes: true
 liveWebsite: true
+
+git:
+  numCommits: 2
+  allCommitted: true
+  allSynced: true
 
 html:
   - path: "index.html"
@@ -38,7 +42,7 @@ css:
       - 'width: 50%'
       - 'width: 33\.3333%'
       - 'width: 66\.6666%'
-    search_not:
+    searchNot:
       - ['@media.+\(.*max-width', 'Media queries with `max-width` should not be used — use `min-width` instead']
       - ['@media.+\(.*px', 'Pixel units should not be used in media queries — use `em` instead']
       - ['font-size\s*:\s*.+px', 'Pixel units should not be used for `font-size` — use `rem` instead']
