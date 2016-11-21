@@ -33,7 +33,6 @@ img:nth-child(5) {
 @media only screen and (min-width: 25em) {
 
   img {
-    float: left;
     width: 50%;
   }
 
@@ -52,7 +51,13 @@ img:nth-child(5) {
 
 @media only screen and (min-width: 38em) {
 
+  img {
+    width: 33.3333%;
+  }
 
+  img:nth-child(5) {
+    display: none;
+  }
 
 }
 
